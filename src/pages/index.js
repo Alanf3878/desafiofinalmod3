@@ -6,9 +6,9 @@ import "../components/global/global.css"
 const Index = () => {
   return (
    <div>
-     <Header/>
-     <Main/>
+     <Header/> 
      <Footer/>
+     <Main/>
      
    </div>
   );
