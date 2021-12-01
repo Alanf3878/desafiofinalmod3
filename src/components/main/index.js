@@ -1,12 +1,15 @@
 import React from 'react';
+import Card from './card';
+import Subcard from './subcard';
 import * as S from './style'
 
 const Main = () => {
   return (
    <S.Main>
-       <S.Section>
-  
-       </S.Section>
+      
+         <Card/>
+         <Subcard/>
+      
   
    </S.Main>
   );

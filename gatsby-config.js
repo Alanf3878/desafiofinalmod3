@@ -7,9 +7,9 @@ module.exports = {
   {
     resolve: "gatsby-source-graphql",
     options: {
-      typeName: "SWAPI",    
-      fieldName: "swapi",     
-      url: "https://swapi-graphql.netlify.app/.netlify/functions/index",
+      typeName: "alldata",    
+      fieldName: "alldata",     
+      url: "https://api-us-east-1.graphcms.com/v2/ckwktl7xo0qrw01z6glpdcl2y/master",
     }
   }
 ],

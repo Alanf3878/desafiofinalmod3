@@ -3,13 +3,14 @@ import Footer from '../components/footer';
 import Header from '../components/header';
 import Main from '../components/main';
 import "../components/global/global.css"
+import { Link } from 'gatsby';
+
 const Index = () => {
   return (
    <div>
      <Header/> 
-     <Footer/>
      <Main/>
-     
+     <Footer />
    </div>
   );
 };

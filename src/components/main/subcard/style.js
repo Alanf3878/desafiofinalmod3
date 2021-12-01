@@ -1,12 +1,5 @@
+
 import styled from "styled-components";
-
-export const Main = styled.div`
-width: 100%;
-height: 100vh;
-background-image: linear-gradient(0deg, rgb(15, 23, 42) 0%, rgb(30, 41, 59) 100%);
-
-`
-
 export const Box = styled.div`
 background-color: red;
 width: 100%;
@@ -19,4 +12,14 @@ export const Cub = styled.div`
 background-color: gold;
 width: 550px;
 height: 250px;
+`
+
+export const Section = styled.div`
+max-width: 1333px;
+margin: 0 auto;
+width: 100%;
+padding-top: 1rem;
+display: flex;
+flex-wrap: wrap;
+
 `

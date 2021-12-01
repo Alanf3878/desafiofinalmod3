@@ -1,21 +1,69 @@
-
-import React from 'react';
-import * as S from "./style"
+import React from "react";
+import * as S from "./style";
+import { graphql,useStaticQuery } from "gatsby";
+import Home from "./home";
 
 const Header = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      alldata {
+        headers {
+          home
+          soci
+          sobre
+          contato
+          projetos
+          iconinsta {
+            url
+          }
+          iconface {
+            url
+          }
+          iconlinkedin {
+            url
+          }
+          icongithub {
+            url
+          }
+        }
+      }
+    }
+  `);
+
+  const {
+    home,
+    soci,
+    sobre,
+    contato,
+    projetos,
+    iconinsta,
+    iconface,
+    iconlinkedin,
+    icongithub,
+  } = data.alldata.headers[0];
+
   return (
-   <S.Header>
+    <S.Container>
+      <S.Header>
+      <S.Boxitem>
+        <li>{home}</li>   
+        <li>{contato}</li> 
+        <li>{sobre}</li>
+        <li>{projetos}</li>
+        <S.BoxIcon>
+        <S.IconHeader src={iconinsta.url} />
+        <S.IconHeader src={iconface.url} />
+        <S.IconHeader src={iconlinkedin.url} />
+        <S.IconHeader src={icongithub.url} />
+      </S.BoxIcon>
+      </S.Boxitem>
      
-     
-             <S.Boxitem>
-                 <li>HOME</li>
-                 <li>REDE SOCIAIS</li>
-                 <li>SOBRE</li>
-                 <li>CONTATO</li>
-             </S.Boxitem>
-      
-     
-   </S.Header>
+    </S.Header>
+    <Home/>
+
+    </S.Container>
+    
+
   );
 };
 
