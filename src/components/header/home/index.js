@@ -34,9 +34,7 @@ const Home = () => {
 return (
     <div>
       <>
-      <S.Title>
-          <h3>{title}</h3>
-        </S.Title>
+      
         <S.Imghome> 
           <S.BoxImg><img src = {imghome.url}/></S.BoxImg>
         </S.Imghome>

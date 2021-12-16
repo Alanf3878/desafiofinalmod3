@@ -2,6 +2,7 @@ import React from "react";
 import * as S from "./style";
 import { graphql,useStaticQuery } from "gatsby";
 import Home from "./home";
+import { Link } from "gatsby";
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -46,10 +47,10 @@ const Header = () => {
     <S.Container>
       <S.Header>
       <S.Boxitem>
-        <li>{home}</li>   
-        <li>{contato}</li> 
-        <li>{sobre}</li>
-        <li>{projetos}</li>
+        <Link to = "/">{home}</Link>   
+        <Link to = "/contact">{contato}</Link> 
+        <Link to = "/about">{sobre}</Link>
+        <Link to = "/project">{projetos}</Link>
         <S.BoxIcon>
         <S.IconHeader src={iconinsta.url} />
         <S.IconHeader src={iconface.url} />

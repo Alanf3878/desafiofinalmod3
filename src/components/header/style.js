@@ -19,13 +19,18 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 list-style: none;
-li{
-    color: #fff;
+link{
+  
+    font-size: 20px;
+    color: #ffffff;
     font-family: 'Roboto', sans-serif;
     &:hover {
   cursor: pointer;
   transform: translateY(-2px);
 }
+@media (max-width: 600px) {
+    display: none;  
+  }
 }
 `
 export const IconHeader = styled.img`
@@ -42,5 +47,5 @@ justify-content: space-around;
 `
 export const Container = styled.div`
 background-image: linear-gradient(0deg, rgb(11, 17, 31) 0%, rgb(15, 23, 42) 100%);
-height: 92vh;
+height: 100%;
 `

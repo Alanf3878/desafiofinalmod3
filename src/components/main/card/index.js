@@ -1,56 +1,57 @@
 import React from 'react';
 import * as S from './style'
+import { graphql,useStaticQuery } from "gatsby";
 
 const Card = () => {
     const data = useStaticQuery(graphql`
     query {
       alldata {
         cards {
-          imghome {
+          img1 {
             url
           }
-          imghome2 {
+          img2 {
             url
           }
-          imghome3 {
+          img3 {
             url
           }
-          imghome4 {
+          img4 {
             url
           }
-          title
+          titlecard
           subtitle
-          text
+          btncard
         }
       }
     }
   `);
 
   const {
-    
+    img1, img2, img3, img4, titlecard, subtitle, btncard
   } = data.alldata.cards[0];
   return (
        <S.Section>
               <div>
-           <S.Btn>SOPRAVER</S.Btn>
+           <S.Btn>{btncard}</S.Btn>
          </div>
          <S.Box>
-           <S.Cub>
+           <S.Cub back = {img1.url}>
                <h2>Projetos</h2>
            </S.Cub>
-           <S.Cub>
+           <S.Cub back = {img2.url}>
            <h2>Fotos</h2>
            </S.Cub>
          </S.Box>
          <div>
-           <S.Btn>SOPRAVER</S.Btn>
+           <S.Btn>{btncard}</S.Btn>
          </div>
          <S.Box>
-           <S.Cub>
+           <S.Cub back = {img3.url}>
                <h2>Sobre</h2>
                </S.Cub>
-           <S.Cub>
-           <h2>Sobre</h2>
+           <S.Cub back = {img4.url}>
+           <h2>Empresa</h2>
            </S.Cub>
          </S.Box>
        </S.Section>
