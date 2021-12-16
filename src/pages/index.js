@@ -1,17 +1,16 @@
-import React from 'react';
-import Footer from '../components/footer';
-import Header from '../components/header';
-import Main from '../components/main';
-import "../components/global/global.css"
-import { Link } from 'gatsby';
+import React from "react";
+import Footer from "../components/footer";
+import Header from "../components/header";
+import Main from "../components/main";
+import "../components/global/global.css";
 
 const Index = () => {
   return (
-   <div>
-     <Header/> 
-     <Main/>
-     <Footer />
-   </div>
+    <div>
+      <Header />
+      <Main />
+      <Footer />
+    </div>
   );
 };
 

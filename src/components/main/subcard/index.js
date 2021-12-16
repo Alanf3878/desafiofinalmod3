@@ -16,15 +16,15 @@ const Subcard = () => {
           img2 {
             url
           }
-          addimg{
+          addimg {
             url
           }
           titletecnologia
           subcardtecnologia
-          imgequal{
+          imgequal {
             url
           }
-          imgsuces{
+          imgsuces {
             url
           }
           text
@@ -33,64 +33,65 @@ const Subcard = () => {
     }
   `);
 
-  const {success, imgsuces, img, img2, subcardtext, subcardtitle, subcardtecnologia, addimg, titletecnologia, text, imgequal } = data.alldata.subcards[0];
+  const {
+    success,
+    imgsuces,
+    img,
+    img2,
+    subcardtext,
+    subcardtitle,
+    subcardtecnologia,
+    addimg,
+    titletecnologia,
+    text,
+    imgequal,
+  } = data.alldata.subcards[0];
 
   return (
     <S.Section>
       <S.Title>
         <h2>Empreendedorismo</h2>
-        
       </S.Title>
       <S.Boxbtn>
-      <S.Btn>Saiba-mais</S.Btn>
+        <S.Btn>Saiba-mais</S.Btn>
       </S.Boxbtn>
-     
-    
 
       <S.Box>
         <S.Cub>
-         
-        <p>{subcardtecnologia}</p>
-          
+          <p>{subcardtecnologia}</p>
+
           <S.Contente>
-          <img src ={img.url}/>
-          <h2>{titletecnologia}</h2>
+            <img src={img.url} />
+            <h2>{titletecnologia}</h2>
           </S.Contente>
         </S.Cub>
         <S.Imgbox>
-          <img src ={addimg.url}/>
-          </S.Imgbox>
-        
+          <img src={addimg.url} />
+        </S.Imgbox>
 
         <S.Cub>
-         
           <p>{subcardtext}</p>
           <S.Contente>
-           <img  src ={img2.url}/>
-           
-           <h2>{subcardtitle}</h2>
+            <img src={img2.url} />
+
+            <h2>{subcardtitle}</h2>
           </S.Contente>
         </S.Cub>
         <S.Imgequal>
-          <img  src ={imgequal.url}/>
+          <img src={imgequal.url} />
         </S.Imgequal>
 
         <S.Cub>
-         
-         <p>{text}</p>
-         <S.Contente>
-          <img  src={imgsuces.url} />
-          <h2>{success}</h2>
-         </S.Contente>
-       </S.Cub>
-
-
+          <p>{text}</p>
+          <S.Contente>
+            <img src={imgsuces.url} />
+            <h2>{success}</h2>
+          </S.Contente>
+        </S.Cub>
       </S.Box>
 
       <S.Text>
-        <S.Textbox>
-          
-        </S.Textbox>
+        <S.Textbox></S.Textbox>
       </S.Text>
     </S.Section>
   );

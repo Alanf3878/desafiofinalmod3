@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./style";
-import { graphql,useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import Home from "./home";
 import { Link } from "gatsby";
 
@@ -46,25 +46,21 @@ const Header = () => {
   return (
     <S.Container>
       <S.Header>
-      <S.Boxitem>
-        <Link to = "/">{home}</Link>   
-        <Link to = "/contact">{contato}</Link> 
-        <Link to = "/about">{sobre}</Link>
-        <Link to = "/project">{projetos}</Link>
-        <S.BoxIcon>
-        <S.IconHeader src={iconinsta.url} />
-        <S.IconHeader src={iconface.url} />
-        <S.IconHeader src={iconlinkedin.url} />
-        <S.IconHeader src={icongithub.url} />
-      </S.BoxIcon>
-      </S.Boxitem>
-     
-    </S.Header>
-    <Home/>
-
+        <S.Boxitem>
+          <Link to="/">{home}</Link>
+          <Link to="/contact">{contato}</Link>
+          <Link to="/about">{sobre}</Link>
+          <Link to="/project">{projetos}</Link>
+          <S.BoxIcon>
+            <S.IconHeader src={iconinsta.url} />
+            <S.IconHeader src={iconface.url} />
+            <S.IconHeader src={iconlinkedin.url} />
+            <S.IconHeader src={icongithub.url} />
+          </S.BoxIcon>
+        </S.Boxitem>
+      </S.Header>
+      <Home />
     </S.Container>
-    
-
   );
 };
 

@@ -1,6 +1,6 @@
 import React from "react";
-import * as S from './style'
-import { graphql,useStaticQuery } from "gatsby";
+import * as S from "./style";
+import { graphql, useStaticQuery } from "gatsby";
 
 const Home = () => {
   const data = useStaticQuery(graphql`
@@ -27,36 +27,30 @@ const Home = () => {
     }
   `);
 
-  const {
-    imghome, title, subtitle, text, imghome2, imghome3, imghome4
-  } = data.alldata.homes[0];
+  const { imghome, title, subtitle, text, imghome2, imghome3, imghome4 } =
+    data.alldata.homes[0];
 
-return (
+  return (
     <div>
       <>
-      
-        <S.Imghome> 
-          <S.BoxImg><img src = {imghome.url}/></S.BoxImg>
+        <S.Imghome>
+          <S.BoxImg>
+            <img src={imghome.url} />
+          </S.BoxImg>
         </S.Imghome>
-        
       </>
       <S.Section>
-     
-    
         <S.Subtitle>
           <h1>{subtitle}</h1>
         </S.Subtitle>
         <S.Text>
           <S.Boxtext>
-          <p>{text}</p>
+            <p>{text}</p>
           </S.Boxtext>
         </S.Text>
-
-
       </S.Section>
-      
     </div>
-    );
-  };
-  
-  export default Home;
+  );
+};
+
+export default Home;
