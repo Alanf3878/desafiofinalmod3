@@ -2,6 +2,7 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import * as S from "../components/about/style";
 import { Link } from "gatsby";
+import Footer from "../components/footer";
 const About = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -35,14 +36,14 @@ const About = () => {
         <S.Title>
           <h1>{title}</h1>
         </S.Title>
-
         <img src={photo.url} />
-
         <S.Text>
           <p>{text}</p>
         </S.Text>
       </S.Homeabout>
+      <Footer/>
     </S.About>
+    
   );
 };
 export default About;

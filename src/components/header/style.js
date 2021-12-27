@@ -47,8 +47,9 @@ export const BoxIcon = styled.div`
 export const Container = styled.div`
   background-image: linear-gradient(
     0deg,
-    rgb(11, 17, 31) 0%,
-    rgb(15, 23, 42) 100%
+    
+    rgb(30, 41, 59) 0%,
+    rgb(11, 17, 31) 80%
   );
   height: 100%;
 `;

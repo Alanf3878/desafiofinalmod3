@@ -26,11 +26,30 @@ export const Container = styled.div`
   }
 `;
 export const Boxfooter = styled.div`
-  background-color: gold;
+  display: flex;
+  flex-wrap: wrap;
   width: 200px;
   height: 200px;
+  align-content: space-around;
+  color: #977c56;
+ 
+
+  a{
+    width: 100%;
+    text-align: center;
+    color: #977c56;
+    
+  }
+
   @media (max-width: 875px) {
     width: 100%;
     height: 100px;
+    display: flex;
+    justify-content: center;
+
+  a{
+    width: 100px;
+    
+  }
   }
 `;

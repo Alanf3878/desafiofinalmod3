@@ -15,12 +15,15 @@ export const About = styled.div`
     rgb(15, 23, 42) 100%
   );
 `;
+
+
 export const Header = styled.div`
   width: 60%;
   height: 10vh;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  
   align-items: center;
 `;
 export const Homeabout = styled.div`
@@ -41,12 +44,13 @@ export const Homeabout = styled.div`
 export const Title = styled.div`
   width: 80%;
   height: 100px;
+  color: #fff;
   text-align: center;
 `;
 export const Text = styled.div`
   height: 180px;
   width: 80%;
-
+  color: #fff;
   text-align: center;
   display: flex;
   align-items: center;

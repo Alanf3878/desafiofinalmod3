@@ -66,16 +66,14 @@ export const Btn = styled.button`
 `;
 export const Text = styled.div`
   width: 100%;
-  padding: 3rem;
-  height: 50vh;
+  padding-top: 3rem;
   display: flex;
   justify-content: center;
-  text-align: center;
   color: #fff;
 `;
 
 export const Textbox = styled.div`
-  width: 85%;
+  width: 100%;
 `;
 export const Title = styled.div`
   width: 100%;
