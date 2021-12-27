@@ -3,14 +3,12 @@ import { graphql, useStaticQuery } from "gatsby";
 import * as S from "../components/about/style";
 import { Link } from "gatsby";
 import Footer from "../components/footer";
+import  Header  from "../components/header";
 const About = () => {
   const data = useStaticQuery(graphql`
     query {
       alldata {
         abouts {
-          home
-          contact
-          projects
           photo {
             url
           }
@@ -21,16 +19,13 @@ const About = () => {
     }
   `);
 
-  const { home, contact, projects, photo, text, title } =
+  const {  photo, text, title } =
     data.alldata.abouts[0];
   return (
     <S.About>
+      <Header/>
       <S.Container>
-        <S.Header>
-          <Link to="/">{home}</Link>
-          <Link to="/contact">{contact}</Link>
-          <Link to="/project">{projects}</Link>
-        </S.Header>
+      
       </S.Container>
       <S.Homeabout>
         <S.Title>

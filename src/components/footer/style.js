@@ -38,6 +38,7 @@ export const Boxfooter = styled.div`
     width: 100%;
     text-align: center;
     color: #977c56;
+    text-decoration: none;
     
   }
 

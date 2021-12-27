@@ -1,7 +1,7 @@
 import React from "react";
 import * as S from "./style";
 import { graphql, useStaticQuery } from "gatsby";
-
+import { Link } from "gatsby";
 const Card = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -34,9 +34,12 @@ const Card = () => {
       <div>
         <S.Btn>{btncard}</S.Btn>
       </div>
+
       <S.Box>
         <S.Cub back={img1.url}>
-          <h2>Projetos</h2>
+          <Link to="/project">
+            <h2>Projetos</h2>
+          </Link>
         </S.Cub>
         <S.Cub back={img2.url}>
           <h2>Fotos</h2>
@@ -47,10 +50,12 @@ const Card = () => {
       </div>
       <S.Box>
         <S.Cub back={img3.url}>
-          <h2>Sobre</h2>
+          <Link to="/about">
+            <h2>Sobre</h2>
+          </Link>
         </S.Cub>
         <S.Cub back={img4.url}>
-          <h2>Empresa</h2>
+          <a href="https://epic-hypatia-aec5a3.netlify.app/"><h2>Empresa</h2></a>
         </S.Cub>
       </S.Box>
     </S.Section>

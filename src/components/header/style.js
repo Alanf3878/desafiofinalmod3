@@ -18,11 +18,13 @@ export const Boxitem = styled.ul`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  list-style: none;
-  link {
+ 
+  a {
     font-size: 20px;
     color: #ffffff;
     font-family: "Roboto", sans-serif;
+    list-style: none;
+    text-decoration: none;
     &:hover {
       cursor: pointer;
       transform: translateY(-2px);
@@ -45,11 +47,10 @@ export const BoxIcon = styled.div`
   justify-content: space-around;
 `;
 export const Container = styled.div`
-  background-image: linear-gradient(
+ background-image: linear-gradient(
     0deg,
-    
-    rgb(30, 41, 59) 0%,
-    rgb(11, 17, 31) 80%
+    rgb(15, 23, 42) 0%,
+    rgb(30, 41, 59) 100%
   );
-  height: 100%;
+  /* height: 100%; */
 `;

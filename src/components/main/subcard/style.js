@@ -54,7 +54,7 @@ export const Btn = styled.button`
   width: 200px;
   height: 50px;
   border: none;
-  color: #977c56;
+  
   background-image: linear-gradient(
     0deg,
     rgb(11, 17, 31) 0%,
@@ -62,6 +62,11 @@ export const Btn = styled.button`
   );
   &:hover {
     transform: translateY(-5px);
+  }
+
+  a{
+    text-decoration: none;
+    color: #977c56;
   }
 `;
 export const Text = styled.div`

@@ -53,7 +53,11 @@ const Subcard = () => {
         <h2>Empreendedorismo</h2>
       </S.Title>
       <S.Boxbtn>
-        <S.Btn>Saiba-mais</S.Btn>
+        <S.Btn>
+          <a href="https://endeavor.org.br/desenvolvimento-pessoal/o-que-e-empreendedorismo-da-inspiracao-a-pratica/">
+            Saiba-mais
+          </a>
+        </S.Btn>
       </S.Boxbtn>
 
       <S.Box>

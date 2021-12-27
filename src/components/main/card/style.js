@@ -25,6 +25,7 @@ export const Cub = styled.div`
 
   h2 {
     color: #fff;
+    
   }
   &:hover {
     cursor: pointer;

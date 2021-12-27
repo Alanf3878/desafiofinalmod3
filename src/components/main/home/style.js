@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Imghome = styled.div`
   display: flex;
   width: 100%;
+  padding: 2rem;
 
   justify-content: center;
   align-items: center;
