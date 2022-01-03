@@ -30,6 +30,8 @@ display: flex;
 
 @media (max-width: 900px) {
      flex-wrap: wrap;
+     justify-content: center;
+
     }
 
 `
@@ -80,15 +82,21 @@ button{
 `
 
 export const BoxImg = styled.div` 
-width: 50%;
+width: 500px;
+height: 80%;
+display: flex;
+justify-content: center;
+align-items: center;
+
 
 
   img{
-    width: 100%;
+    width: 80%;
     
   }
   @media (max-width: 900px) {
      height: 30%;
+     display: block;
     }
 
 

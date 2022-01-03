@@ -38,7 +38,14 @@ export const Homeabout = styled.div`
   padding: 50px;
   img {
     width: 500px;
+    @media (max-width: 900px) {
+    width: 400px;
+    }
   }
+  @media (max-width: 750px) {
+    padding: 0;
+    
+    }
 `;
 
 export const Title = styled.div`
@@ -46,6 +53,10 @@ export const Title = styled.div`
   height: 100px;
   color: #fff;
   text-align: center;
+  @media (max-width: 900px) {
+    width: 100%;
+    height: 100%;
+    }
 `;
 export const Text = styled.div`
   height: 180px;
@@ -54,4 +65,9 @@ export const Text = styled.div`
   text-align: center;
   display: flex;
   align-items: center;
+ 
+  @media (max-width: 900px) {
+    width: 100%;
+    height: 100%;
+    }
 `;
