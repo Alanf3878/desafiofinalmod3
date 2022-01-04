@@ -55,7 +55,9 @@ const Card = () => {
           </Link>
         </S.Cub>
         <S.Cub back={img4.url}>
-          <a href="https://epic-hypatia-aec5a3.netlify.app/"><h2>Empresa</h2></a>
+          <a href="https://epic-hypatia-aec5a3.netlify.app/">
+            <h2>Empresa</h2>
+          </a>
         </S.Cub>
       </S.Box>
     </S.Section>

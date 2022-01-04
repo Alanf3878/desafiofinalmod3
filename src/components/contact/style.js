@@ -23,81 +23,71 @@ export const Header = styled.div`
   align-items: center;
 `;
 
-export const Background = styled.div` 
-width: 100%;
-height: 100vh;
-display: flex;
-
-@media (max-width: 900px) {
-     flex-wrap: wrap;
-     justify-content: center;
-
-    }
-
-`
-
-export const Box = styled.div` 
-width: 500px;
-padding: 10px;
-height: 80%;
-margin: 0 auto;
-display: flex;
-align-content: center;
-flex-wrap: wrap;
-
-`
-
-export const BoxInput = styled.div` 
-width: 100%;
-height: 120px;
-display: flex;
-flex-direction: column;
-padding: 20px;
-justify-content: space-around;
-
-input{ 
-
-  height: 50px;
-  border: none;
-  outline: none;
-  border-radius: 10px;
-}
-
-h4{ 
-  font-size: 30px;
-  color: #977c56;
-}
-button{ 
-
+export const Background = styled.div`
   width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-  border-radius: 20px;
-  color: #ffff;
-  &:hover{ 
-    background-color: #977c56;
+  height: 100vh;
+  display: flex;
+
+  @media (max-width: 900px) {
+    flex-wrap: wrap;
+    justify-content: center;
   }
-}
-`
+`;
 
-export const BoxImg = styled.div` 
-width: 500px;
-height: 80%;
-display: flex;
-justify-content: center;
-align-items: center;
+export const Box = styled.div`
+  width: 500px;
+  padding: 10px;
+  height: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+`;
 
+export const BoxInput = styled.div`
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: space-around;
 
+  input {
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+  }
 
-  img{
+  h4 {
+    font-size: 30px;
+    color: #977c56;
+  }
+  button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #ffff;
+    &:hover {
+      background-color: #977c56;
+    }
+  }
+`;
+
+export const BoxImg = styled.div`
+  width: 500px;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
     width: 80%;
-    
   }
   @media (max-width: 900px) {
-     height: 30%;
-     display: block;
-    }
-
-
-`
+    height: 30%;
+    display: block;
+  }
+`;

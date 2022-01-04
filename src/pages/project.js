@@ -52,11 +52,10 @@ const Project = () => {
               <S.BoxItem>
                 <img src={img1.url} />
               </S.BoxItem>
-              </a>
-              <S.BoxItemText>
-                <p>{text}</p>
-              </S.BoxItemText>
-           
+            </a>
+            <S.BoxItemText>
+              <p>{text}</p>
+            </S.BoxItemText>
           </S.Box>
 
           <S.Title>
@@ -68,11 +67,10 @@ const Project = () => {
               <S.BoxItem>
                 <img src={img2.url} />
               </S.BoxItem>
-              </a>
-              <S.BoxItemText>
-                <p>{text}</p>
-              </S.BoxItemText>
-            
+            </a>
+            <S.BoxItemText>
+              <p>{text}</p>
+            </S.BoxItemText>
           </S.Box>
 
           <S.Title>
@@ -84,11 +82,10 @@ const Project = () => {
               <S.BoxItem>
                 <img src={img3.url} />
               </S.BoxItem>
-              </a>
-              <S.BoxItemText>
-                <p>{text}</p>
-              </S.BoxItemText>
-           
+            </a>
+            <S.BoxItemText>
+              <p>{text}</p>
+            </S.BoxItemText>
           </S.Box>
         </S.Section>
       </S.Container>

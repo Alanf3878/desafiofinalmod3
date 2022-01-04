@@ -16,14 +16,13 @@ export const About = styled.div`
   );
 `;
 
-
 export const Header = styled.div`
   width: 60%;
   height: 10vh;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  
+
   align-items: center;
 `;
 export const Homeabout = styled.div`
@@ -39,13 +38,12 @@ export const Homeabout = styled.div`
   img {
     width: 500px;
     @media (max-width: 900px) {
-    width: 400px;
+      width: 400px;
     }
   }
   @media (max-width: 750px) {
     padding: 0;
-    
-    }
+  }
 `;
 
 export const Title = styled.div`
@@ -56,7 +54,7 @@ export const Title = styled.div`
   @media (max-width: 900px) {
     width: 100%;
     height: 100%;
-    }
+  }
 `;
 export const Text = styled.div`
   height: 180px;
@@ -65,9 +63,9 @@ export const Text = styled.div`
   text-align: center;
   display: flex;
   align-items: center;
- 
+
   @media (max-width: 900px) {
     width: 100%;
     height: 100%;
-    }
+  }
 `;
